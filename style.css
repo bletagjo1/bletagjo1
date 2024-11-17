@@ -549,14 +549,14 @@ html {
     }
 
     .visit {
-        width: 150px;
-        font-size: 20px;
+        width: 250px;
+        font-size: 30px;
         text-align: center;
         padding: 15px 16px;
     }
 
     #contact {
-        margin-top: 20%;
+        margin-top: 25%;
     }
 
     .contact-container h2 {
@@ -578,6 +578,15 @@ html {
     .div i, span, p {
         font-size: 35px;
         margin-top: 3%;
+    }
+
+    .div {
+        margin-top: 5%;
+    }
+
+    .contact-content {
+        margin-top: 7%;
+        margin-bottom: 5%;
     }
 
     .contact-content div i {
