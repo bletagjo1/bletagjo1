@@ -426,24 +426,63 @@ html {
 
     .home-container {
         flex-direction: column;
+        width: 100%;
+        border: 1px solid red;
     }
 
     .left-side {
         padding-top: 8%;
         margin: auto;
+        width: 90%;
     }
 
     .left-side img {
         margin: auto;
+        width: 60%;
     }
 
     .right-side {
         padding-top: 5%;
         margin: auto;
+        border: 1px solid red;
     }
 
-    .right-side p,h1 {
+    .right-side p {
         text-align: center;
+        font-size: 30px;
+    }
+
+    .right-side h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .socials a i {
+        font-size: 40px;
+    }
+
+    .phone i {
+        font-size: 40px;
+    }
+
+    .phone p {
+        font-size: 40px;
+    }
+
+    .gmail i {
+        font-size: 40px;
+    }
+
+    .gmail p {
+        font-size: 40px;
+    }
+
+    .location i {
+        font-size: 40px;
+    }
+
+    .location p {
+        font-size: 40px;
     }
 
     .socials {
@@ -456,7 +495,7 @@ html {
     }
 
     .about-container h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .about-container p {
@@ -468,7 +507,7 @@ html {
     }
 
     .skills-container h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .first-row div {
@@ -493,7 +532,7 @@ html {
     }
 
     .project-container h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .project-content {
@@ -503,20 +542,21 @@ html {
     }
 
     .project-content div {
-        width: 90%;
+        width: 95%;
         margin-top: 10%;
     }
 
     .visit {
-        width: 110px;
+        width: 150px;
         font-size: 20px;
+        text-align: center;
         padding: 15px 16px;
     }
 
     .contact-container h2 {
-        font-size: 16px;
+        font-size: 25px;
         padding: 5px 18px;
-        width: 100px;
+        width: 170px;
     }
 
     .platforms span {
@@ -524,11 +564,12 @@ html {
     }
 
     .p1 {
-        font-size: 21px;
+        font-size: 27px;
     }
 
     .div i, span, p {
-        font-size: 20px;
+        font-size: 25px;
+        margin-top: 3%;
     }
 }
 
