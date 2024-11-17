@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0;
+    transition: .3s linear;
+    position: fixed;
+    z-index: 99999;
+}
+
+.navbar .active {
+    padding: 22px 0;
+    background-color: #9c9c9c;
+    box-shadow: 0 -8px 20px 0 #868686;
+}
+
+.logo {
+    color: black;
+    font-size: 23px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.nav_container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_container, .menu {
+    align-items: center;
+    display: flex;
+}
+    
+.nav_logo {
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu a {
+    border-bottom: 1px solid;
+    border-color: #ffffff;
+    color: black;
+    font-weight: 500;
+    margin: 0 12px;
+    padding: 4px 0;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.menu a:hover {
+    border-color: #fc2375;
+} 
+
+.navbar.active .menu a {
+    border-bottom: 1px solid #fc2375;
+}
+
+#home {
+    justify-items: center;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 10%;
+}
+
+.right-side {
+    width: 40%;
+}
+
+.right-side h1 {
+    font-size: 43px;
+}
+
+.right-side h1 span {
+    color: #656565;
+    font-family: Garamond;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.text {
+    font-size: 23px;
+    font-family: MV Boli;
+    color: #fc2375;
+}
+
+.socials {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+}
+
+.fa-instagram , .fa-facebook {
+    font-size: 30px;
+    color: black;
+}
+
+.left-side {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.left-side img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contact {
+    width: 100%;
+    padding-top: 10%;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone i {
+    font-size: 23px;
+    padding-right: 20px;
+}
+
+.phone p {
+    font-size: 22px;
+    color: black;
+}
+
+.gmail {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.gmail i {
+    font-size: 23px;
+    padding-right: 20px;
+}
+
+.gmail p {
+    font-size: 22px;
+    color: black;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.location i {
+    font-size: 23px;
+    padding-right: 20px;
+}
+
+.location p {
+    font-size: 22px;
+    color: black;
+}
+
+#about {
+    width: 100%;
+}
+
+.about-container {
+    width: 67%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.about-container h1 {
+    font-size: 35px;
+    font-family: Garamond;
+    font-weight: 400;
+    padding: 4px 0;
+    border-bottom: 1px solid #fc2375;
+    justify-self: flex-start;
+}
+
+.about-container p {
+    font-size: 18px;
+}
+
+#skills {
+    width: 100%;
+}
+
+.skills-container {
+    width: 67%;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+.skills-container h1 {
+    font-size: 35px;
+    font-family: Garamond;
+    font-weight: 400;
+    text-align: center;
+    justify-self: center;
+}
+
+.skills-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+.first-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-row div {    
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.first-row img {
+    width: 60%;
+    margin: auto;
+}
+
+.second-row div {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.second-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.second-row img {
+    width: 60%;
+    margin: auto;
+}
+
+#projects {
+    width: 100%;
+}
+
+.project-container {
+    width: 67%;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+.project-container h1 {
+    font-size: 35px;
+    font-family: Garamond;
+    font-weight: 400;
+    text-align: center;
+    justify-self: center;
+}
+
+.project-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.project-content div {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+
+.project-content div img {
+    width: 100%;
+}
+
+.project-content div p {
+    margin-top: 1.5%;
+}
+
+.project-content div span {
+    color: #fc2375;
+}
+
+.visit {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 35px;
+    padding: 15px 16px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#contact {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 17px;
+    background-color: #e8e8e8;
+    border-radius: 20px;
+    font-weight: 200;
+    color: #4B5563;
+    width: fit-content;
+    text-align: center;
+    padding: 5px 18px;
+    margin: auto;
+}
+
+.p1 {
+    font-family: inter;
+    color: #4B5563;
+    font-size: 20px;
+    width: 35%;
+    margin: auto;
+}
+
+.contact-content {
+    margin-top: 2%;
+    display: inline-grid;
+}
+
+.contact-content div {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.contact-content div i {
+    font-size: 20px;
+    padding: 12px 10px;
+}
+
+.p {
+    font-size: 23px;
+    color: black;
+    padding: 10px;
+}
+
+.platforms {
+    margin-top: 2%;
+    font-size: 16px;
+    color: #4B5563;
+    font-weight: 400;
+}
+
+.socials1 a i {
+    padding: 15px 20px;
+    margin-top: 5px;
+    color: #4B5563;
+}
+
+.div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.div i, span, p {
+    padding: 0px 5px;
+    color: #4B5563;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu a {
+        font-size: 25px;
+    }
+
+    .menu a:last-child {
+        padding-right: 40px;
+    }
+
+    .home-container {
+        flex-direction: column;
+    }
+
+    .left-side {
+        padding-top: 8%;
+        margin: auto;
+    }
+
+    .left-side img {
+        margin: auto;
+    }
+
+    .right-side {
+        padding-top: 5%;
+        margin: auto;
+    }
+
+    .right-side p,h1 {
+        text-align: center;
+    }
+
+    .socials {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #about {
+        margin-top: 10%;
+    }
+
+    .about-container h1 {
+        font-size: 40px;
+    }
+
+    .about-container p {
+        font-size: 27px;
+    }
+
+    #skills {
+        margin-top: 10%;
+    }
+
+    .skills-container h1 {
+        font-size: 40px;
+    }
+
+    .first-row div {
+        padding: 5px;
+    }
+
+    .first-row div span {
+        font-size: 25px;
+    }
+
+    .second-row div span {
+        font-size: 25px;
+    }
+
+    .second-row div {
+        padding: 5px;
+        margin-top: 15px;
+    }
+
+    #projects {
+        margin-top: 10%;
+    }
+
+    .project-container h1 {
+        font-size: 40px;
+    }
+
+    .project-content {
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .project-content div {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .visit {
+        width: 110px;
+        font-size: 20px;
+        padding: 15px 16px;
+    }
+
+    .contact-container h2 {
+        font-size: 16px;
+        padding: 5px 18px;
+        width: 100px;
+    }
+
+    .platforms span {
+        font-size: 12px;
+    }
+
+    .p1 {
+        font-size: 21px;
+    }
+
+    .div i, span, p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1080px) {
+    .home-container {
+        flex-direction: row;
+    }
+}
