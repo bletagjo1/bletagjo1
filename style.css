@@ -447,7 +447,7 @@ html {
 
     .right-side p {
         text-align: center;
-        font-size: 45px;
+        font-size: 37px;
     }
 
     .right-side h1 {
@@ -555,10 +555,14 @@ html {
         padding: 15px 16px;
     }
 
+    #contact {
+        margin-top: 20%;
+    }
+
     .contact-container h2 {
         font-size: 35px;
         padding: 5px 18px;
-        width: 200px;
+        width: 250px;
     }
 
     .platforms span {
@@ -566,21 +570,23 @@ html {
     }
 
     .p1 {
-        font-size: 40px;
+        font-size: 45px;
+        width: fit-content;
+        margin: 0% 7%;
     }
 
     .div i, span, p {
-        font-size: 25px;
+        font-size: 35px;
         margin-top: 3%;
     }
 
     .contact-content div i {
-        font-size: 25px;
-        padding: 17px 10px;
+        font-size: 35px;
+        padding: 24px 10px;
     }
 
     .p {
-        font-size: 27px;
+        font-size: 37px;
     }
 }
 
